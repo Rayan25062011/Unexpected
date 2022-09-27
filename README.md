@@ -7,3 +7,7 @@ git clone https://github.com/Rayan25062011/Unexpected
 ./install.sh
 python3 Unexpected.py
 ```
+
+## Notice
+
+I am not responsible for any of your actions, use this responsibly.
