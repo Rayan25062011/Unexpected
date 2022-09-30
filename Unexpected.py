@@ -52,7 +52,7 @@ def main():
     {0}[{1}7{0}] {2}Remove device password
  """.format(GNSL, REDL, WHSL))
     option = input(ENDL + "Unexpected"+GNSL+"("+REDL + "main_menu" + GNSL + ")"+ENDL + "> ")
-    if option == '3':
+    elif option == '3':
         print(("\n{1}[{0}+{1}]{2} Enter a device IP address.").format(REDL, GNSL, WHSL))
         try:
             device_name = input (arrow+" Unexpected"+GNSL+"("+REDL + "connect_device" + GNSL + ")"+ENDL + "> ")
@@ -63,7 +63,6 @@ def main():
         if device_name == '27':
             main()     
         os.system("adb connect "+device_name+":5555")
-        option()
         option = input(ENDL + "Unexpected"+GNSL+"("+REDL + "main_menu" + GNSL + ")"+ENDL + "> ")
 
 
@@ -123,7 +122,7 @@ def main():
         option = input(ENDL + "Unexpected"+GNSL+"("+REDL + "main_menu" + GNSL + ")"+ENDL + "> ")
 
 
-        if option == '5':
+        elif option == '5':
             try:
                 device_name
             except:
@@ -165,7 +164,7 @@ def main():
         option = input(ENDL + "Unexpected"+GNSL+"("+REDL + "main_menu" + GNSL + ")"+ENDL + "> ")
 
 
-    if option == '1':
+    elif option == '1':
         try:
             device_name
         except:
@@ -175,7 +174,7 @@ def main():
         option = input(ENDL + "Unexpected"+GNSL+"("+REDL + "main_menu" + GNSL + ")"+ENDL + "> ")
 
 
-    if option == '7':
+    elif option == '7':
         try:
             device_name
         except:
@@ -184,7 +183,7 @@ def main():
         os.system("adb -s " +device_name+ " shell pm list packages -f")
         option = input(ENDL + "Unexpected"+GNSL+"("+REDL + "main_menu" + GNSL + ")"+ENDL + "> ")
 
-    if option == '8':
+    elif option == '8':
         try:
             device_name
         except:
@@ -194,7 +193,7 @@ def main():
         option = input(ENDL + "Unexpected"+GNSL+"("+REDL + "main_menu" + GNSL + ")"+ENDL + "> ")
 
 
-    if option == '9':
+    elif option == '9':
         try:
             device_name
         except:
@@ -204,7 +203,7 @@ def main():
         option = input(ENDL + "Unexpected"+GNSL+"("+REDL + "main_menu" + GNSL + ")"+ENDL + "> ")
 
 
-    if option ==  '10':
+    elif option ==  '10':
             try:
                 device_name
             except:
@@ -216,17 +215,17 @@ def main():
             os.system("adb -s "+device_name+" unistall "+package_name)
             option = input(ENDL + "Unexpected"+GNSL+"("+REDL + "main_menu" + GNSL + ")"+ENDL + "> ")
 
-    if option == '11':
+    elif option == '11':
         print(f"{REDL}Thank you{ENDL} for using {GREEN}Unexpected!{ENDL}")
         sys.exit()
 
 
-    if option == '12':
+    elif option == '12':
         os.system("chmod +x etc/update.sh && etc/update.sh")
         option = input(ENDL + "Unexpected"+GNSL+"("+REDL + "main_menu" + GNSL + ")"+ENDL + "> ")
 
 
-    if option == '13':
+    elif option == '13':
         print(REDL+"Hello"+ENDL+"\nI am a python developer, i make these softwares\nto help penetration testers\n"+REDL+"Goodbye!"+ENDL)
         option = input(ENDL + "Unexpected"+GNSL+"("+REDL + "main_menu" + GNSL + ")"+ENDL + "> ")
 
@@ -243,12 +242,12 @@ def main():
         sys.exit()
 
 
-    if option == '14':
+    elif option == '14':
         print(f"[{REDL}-{ENDL}] Please wait till this project is posted on {GREEN}Github{ENDL}")
         option = input(ENDL + "Unexpected"+GNSL+"("+REDL + "main_menu" + GNSL + ")"+ENDL + "> ")
 
 
-    if option == '99':
+    elif option == '99':
         print(f"{REDL}You need{ENDL} to use {GNSL}'adb'{ENDL} ex: {GREEN}'adb -s (target IP) shell dumpsys'{ENDL} to dump target info.")
         adbCMD = input("{REDL}Command{ENDL} {GNSL}>{ENDL} ")
         os.system(adbCMD)
