@@ -6,6 +6,7 @@ Android remote access using ADB(android debug bridge)
 git clone https://github.com/Rayan25062011/Unexpected
 cd Unexpected
 chmod +x setup.sh
+./setup.sh
 python3 Unexpected.py
 ```
 
