@@ -50,7 +50,7 @@ xbps-install -y python3
 xbps-install -y android-tools
 } &> /dev/null
 
-}
+
 sleep 1
 echo -e ""$GN"["$RS"+"$GN"]"$CE" Requierments successfully installed!"$C""
 sleep 1
