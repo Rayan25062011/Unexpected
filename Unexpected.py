@@ -63,6 +63,7 @@ def main():
         if device_name == '27':
             main()     
         os.system("adb connect "+device_name+":5555")
+        option()
         option = input(ENDL + "Unexpected"+GNSL+"("+REDL + "main_menu" + GNSL + ")"+ENDL + "> ")
 
 
